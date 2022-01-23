@@ -1,7 +1,7 @@
 import requests
 import json 
 
-from source.song import Track
+from deezpy.song import Track
 
 BASE_URL = 'https://api.deezer.com/search?q='
 
