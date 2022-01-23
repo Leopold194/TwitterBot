@@ -2,4 +2,6 @@
 
 # Clém'
 - [x] Add Deezpy to project
-- [ ] Find a way to upload audio video on twitter
+- [x] Find a way to upload audio video on twitter
+- [ ] Make a video generator
+
