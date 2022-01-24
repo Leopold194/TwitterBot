@@ -2,13 +2,13 @@ import tweepy as tw
 
 from deezpy.search import Search
 
-auth = tw.OAuthHandler("zMnm4cb1pqpDkvHiuR23OtnIc", "dBfiSHyU3hGC4aHQSlpUCvMrCnlEBJJiV942D0YiMSJhybJWW1")
-auth.set_access_token("1265572530640879616-fdWmNdQ1FyiTlThfJTXsRXRm80QLCA", "ykRX16GXGsEvUHXSlF5HKnHSOxH3Gli7l2KTOflAwar8n")
+consumer_key = "CE8nS8CNhhXGWm7GUQHQIc3yU"
+consumer_secret = "zB8RP1eZnCysTTFGmYFGluXtpe7lwZ3OvaABWSAK63QsWYk6ex"
 
-api = tw.API(auth)
+access_token = "1265572530640879616-h8IELazz0SPIWr121kyWvlHdkPiBY5"
+access_token_secret = "7Rfc26cVIbqN5UjD4gq5lHDdDTTCStCdfSy9cilTPXgT4"
 
-try:
-    api.verify_credentials()
-    print("Connected Bot")
-except:
-    print("Launch Error")
+#client = tw.Client(consumer_key = consumer_key, consumer_secret = consumer_secret, access_token = access_token, access_token_secret = access_token_secret)
+auth = tw.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tw.API(auth, wait_on_rate_limit=True)
