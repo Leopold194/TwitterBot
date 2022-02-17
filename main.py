@@ -2,6 +2,8 @@ import tweepy as tw
 import os
 import time
 
+from datetime import datetime
+
 from utils.upload_tweet import upload
 from utils.get_functional_video import create_functional_video
 from utils.track_of_day import get_trackOfDay
@@ -20,24 +22,37 @@ api = tw.API(auth)
 try:
     api.verify_credentials()
     print("Bot is online")
+    connect = True
 except:
     print("Bot has a problem")
 
-run = True
-while run == True:
+while connect:
 
-    musicOfDay = get_trackOfDay()
-    link_video = musicOfDay[0].link
-    link_cover = musicOfDay[0].album["cover_xl"]
+    actually_time = datetime.now()
+    print(actually_time)
 
-    get_audio(link_video); get_image(link_cover)
-    
-    create_functional_video()
+    if actually_time.hour == 10 and (actually_time.minute == 0 or actually_time.minute == 1):
 
-    time.sleep(5)
+        try:
 
-    upload(api, musicOfDay)
+            musicOfDay = get_trackOfDay()
+            link_video = musicOfDay[0].link
+            link_cover = musicOfDay[0].album["cover_xl"]
 
-    os.remove('uploads/video.mp4'); os.remove('uploads/video.avi'); os.remove('uploads/coverOfDay.jpg'); os.remove('uploads/songOfDay.mp3'); os.remove('uploads/songOfDay_short.mp3')
-    
-    run = False
+            get_audio(link_video); get_image(link_cover)
+            
+            create_functional_video()
+
+            time.sleep(5)
+
+            upload(api, musicOfDay)
+
+            os.remove('uploads/video.mp4'); os.remove('uploads/video.avi'); os.remove('uploads/coverOfDay.jpg'); os.remove('uploads/songOfDay.mp3'); os.remove('uploads/songOfDay_short.mp3')
+
+        except:
+
+            print(f"Error {actually_time}")
+        
+    else:
+
+        time.sleep(30)
