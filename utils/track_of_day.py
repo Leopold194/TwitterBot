@@ -1,12 +1,14 @@
 import random
+import json
 
 from deezpy.playlist import Playlist
 from deezpy.song import Track
 
-list_tracks_passed = []
-
 def get_trackOfDay():
-    
+
+    with open('utils/data/musics_passed.json', "r") as file :
+        file = json.load(file)
+
     playlist = Playlist(9949516322)
     list_tracks = []
     
@@ -15,11 +17,14 @@ def get_trackOfDay():
 
     tracks_for_today = random.choice(list_tracks)
     
-    while tracks_for_today in list_tracks_passed:
+    while tracks_for_today in file:
         tracks_for_today = random.choice(list_tracks)
     
-    list_tracks_passed.append(tracks_for_today)
+    file.append(tracks_for_today)
     
     musicOfDay = Track(tracks_for_today)
 
-    return musicOfDay, len(list_tracks_passed)
+    with open('utils/data/musics_passed.json', "w") as writer : 
+        json.dump(file, writer)
+
+    return musicOfDay, len(file)
