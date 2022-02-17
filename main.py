@@ -1,7 +1,10 @@
 import tweepy as tw
 import os
+import time
 import random
+import urllib.request
 
+from bs4 import BeautifulSoup
 from deezpy.playlist import Playlist
 from deezpy.song import Track
 import utils.dowload as dl
@@ -38,12 +41,25 @@ while run == True:
     list_tracks_passed.append(tracks_for_today)
     print(tracks_for_today)
 
-    link_video = Track(tracks_for_today).link
-    link_cover = Track(tracks_for_today).album["cover_small"]
+    musicOfDay = Track(tracks_for_today)
 
-    print(link_video)
+    link_video = musicOfDay.link
+    link_cover = musicOfDay.album["cover_big"]
 
     audio = dl.download_audio(link_video)
+
+    sock = urllib.request.urlopen(link_video)
+    htmlPage = sock.read()
+    sock.close()
+    soup = BeautifulSoup(htmlPage)
+    meta_list = soup.find_all('meta')
+    for i in meta_list:
+        try:
+            if i["property"] == "og:audio":
+                audio = dl.download_audio(i["content"])
+        except:
+            pass
+
     image = dl.download_image(link_cover)
 
     def convert_mp3_to_shortmp3():
@@ -63,14 +79,25 @@ while run == True:
 
     def convert_avi_to_mp4():
         os.popen("ffmpeg -i uploads/video.avi -vf scale=-2:480,format=yuv420p -c:v libx264 -profile:v high -preset slow -b:v 500k -maxrate 500k -bufsize 1000k -threads 0 -c:a aac -c:v libx264 -b:a 160k -vprofile high -bf 0 -strict experimental -f mp4 uploads/video.mp4")
-        return True
 
-    convert = convert_avi_to_mp4()
+    convert_avi_to_mp4()
+    ready = False
 
-    while convert != True:
-        pass
+    while ready != True:
+        try:
+            with open('uploads/video.mp4'): pass
+            ready = True
+        except IOError:
+            pass
 
-    #media = api.media_upload('uploads/video.mp4')
-    tweet = "Test"
-    #post = api.update_status(status=tweet, media_ids=[media.media_id])
+    time.sleep(5)
+
+    media = api.media_upload('uploads/video.mp4')
+    title = musicOfDay.title_short
+    artist = musicOfDay.artist["name"]
+    album = musicOfDay.album["title"]
+    day = len(list_tracks_passed)
+    tweet = f"Day {day}\n\nTitle : {title}\nArtiste : {artist}\nAlbum : {album}"
+    post = api.update_status(status=tweet, media_ids=[media.media_id])
+    os.remove('uploads/video.mp4'); os.remove('uploads/video.avi'); os.remove('uploads/coverOfDay.jpg'); os.remove('uploads/songOfDay.mp3'); os.remove('uploads/songOfDay_short.mp3')
     run = False
