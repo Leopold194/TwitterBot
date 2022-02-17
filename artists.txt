@@ -1,103 +1,103 @@
-- Nirvana
-- Jimi Hendrix
-- Murray Head
-- The Lumineers
-- John Lennon
-- Babyshambles
-- Leonard Cohen
-- Metronomy
-- Scorpions
-- Led Zeppelin 
-- Arthur Lee
-- Bill Whiters
-- Allan Rayman
-- Depeche Mode
-- KISS
-- Metallica
-- Parcels
-- Maryline Manson
-- Jonnhy Cash
-- Dire Straits
-- Moriartry
-- Eric Clapton
-- David Bowie
-- Green Day
-- Linkin Park
-- Radiohead
-- Red Hot
-- Them
-- Eagles
-- Aerosmith
-- Oasis
-- R.E.M.
-- Pixies
-- Michael Kiwanuka
-- Michael Jackson
-- Liam Gallagher
-- The Heavy
-- Baxter Dury
-- Warhaus
-- Artic Monkeys
-- Nick Cave
-- Noir Désir
-- Téléphone
-- Indochine
-- Elton John
-- Madcon
-- Feu! Chatterton
-- The Black Keys
-- Bruno Mars
-- London Grammar
-- Bob Dylan
-- Axel Bauer
-- Ram Jam
-- Queen
-- BB Brunes
-- Bruce Springsteen
-- Woo
-- Barry Moore
-- B.B. King
-- Texas
-- AC/DC
-- ZZ Top
-- Cigarettes After Sex
-- The Rolling Stones
-- The Cure
-- Lukas Graham
-- Coldplay
-- Supertramp
-- Her
-- Kaleo
-- Mickey 3d
-- Superbus
-- Sting
-- Police
-- Imagine Dragons
-- Louise Attaque
-- Gorillaz
-- Eric Burdon
-- Isaac Delusion
-- Pink Floyd
-- The Score
-- Alt-J
-- The Beatles
-- Paul Mccartney
-- The Animals
-- The Doors
-- Guns N' Roses
-- Rage Against The Machine
-- The Clash
-- The Cranberries
-- U2
-- The Strokes
-- Foo Fighters
-- Pearl Jam
-- Genesis
-- Muse
-- Elvis Presley
-- Neil Young
-- Deep Purple
-- Phil Collins
+- Nirvana - The man who sold the world
+- Jimi Hendrix - all along the watchtower
+- Murray Head - say it ain't so, Joe
+- The Lumineers - ophelia
+- John Lennon - imagine
+- Babyshambles - carry on up the morning
+- Leonard Cohen - hallelujah
+- Metronomy - the look
+- Scorpions - still loving you
+- Led Zeppelin - stairway to heaven
+- Arthur Lee - everybody's gotta live
+- Bill Whiters - ain't no sunshine
+- Allan Rayman - rose
+- Depeche Mode - where's the revolution
+- KISS - i was mode for lovin' you
+- Metallica - fade to black
+- Parcels - overnight
+- Jonnhy Cash - hurt
+- Dire Straits - sultans of swing
+- Moriartry - jimmy
+- Eric Clapton - layla
+- David Bowie - space oddity
+- Green Day - boulevart of broken dream
+- Linkin Park - numb
+- Radiohead - exit music (for a film)
+- Red Hot - snow
+- Them - gloria
+- Eagles - hotel california
+- Aerosmith - dream on
+- Oasis - wonderwall
+- R.E.M. - losing my religion
+- Pixies - where is my mind ?
+- Michael Kiwanuka - hero
+- Michael Jackson - billie jean
+- Liam Gallagher - for what it's worth
+- The Heavy - how you like me now?
+- Baxter Dury - miami
+- Warhaus - mad world
+- Arctic Monkeys - why'd you only call me when you're high?
+- Nick Cave - red right hand
+- Noir Désir - l'homme pressé
+- Téléphone - cendrillon
+- Indochine - 3 nuits par semaine
+- Elton John - i'm still standing
+- Madcon - beggin
+- Feu! Chatterton - un monde nouveau
+- The Black Keys - going down south
+- Bruno Mars - Locked out of heaven
+- Mark Ronson - Uptown Funk
+- London Grammar - wasting my young years
+- Bob Dylan - hurricane
+- Axel Bauer - cargo
+- Ram Jam - black betty
+- Queen - another one bites the dust
+- BB Brunes - dis-moi
+- Bruce Springsteen - the river
+- Woodkid - iron
+- Barry Moore- hey now
+- B.B. King - lucille
+- Texas - the conversation
+- AC/DC - highway to hell
+- ZZ Top - la grange
+- Cigarettes After Sex - nothing's gonna hurt you baby
+- The Rolling Stones - angie
+- The Cure - lullaby
+- Lukas Graham - 7 years
+- Coldplay - something, just like this
+- Supertramp - breakfast in america
+- Her - five minutes
+- Hervé - si bien du mal
+- Kaleo - no good
+- Mickey 3d - respire
+- Superbus - butterfly
+- Sting - shape of my heart
+- Police - roxanne
+- Imagine Dragons - believer
+- Louise Attaque - ton invitation
+- Gorillaz - clint eastwood
+- The Animals-  house of the rising sun
+- Isaac Delusion - she pretends
+- Pink Floyd - another brick in the wall, pt2
+- The Score - unstoppable
+- Alt-J - in cold blood
+- The Beatles - while my guitar gently weeps
+- Paul Mccartney - maybe i'm amazed
+- The Doors - break on through
+- Guns N' Roses - sweet child o' mine
+- Rage Against The Machine - bombtrack
+- The Clash - london calling
+- The Cranberries - zombie
+- U2 - sunday bloody sunday
+- The Strokes - the adults are taking
+- Foo Fighters - everlong
+- Pearl Jam - even flow
+- Genesis - jesus he knows me
+- Muse - hysteria
+- Elvis Presley - jailhouse rock
+- Neil Young - harvest moon
+- Deep Purple - smoke on the water
+- Phil Collins - against all odds
 - Simon & Garfunkel
 - Rod Stewart
 - The Do
