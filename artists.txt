@@ -98,103 +98,99 @@
 - Neil Young - harvest moon
 - Deep Purple - smoke on the water
 - Phil Collins - against all odds
-- Simon & Garfunkel
-- Rod Stewart
-- The Do
-- Van Halen
-- The Alan Parsons Project
-- James Brown
-- Bronsky Beat
-- Iggy Pop
-- Mike Oldfield
-- LP
-- The Roots
-- A-HA
-- Chuck Berry
-- Shaka Ponk
-- Santana
-- The Monkees
-- The Beach Boys
-- Patti Smith
-- Charlie Winston
-- Amy Winehouse
-- Madness
-- Bonnie Tyler
-- Barclay James Harvest
-- The Who 
-- Joy Division
-- Stevie Wonder
-- Black Sabath
-- Ramones
-- The White Stripes
-- Survivor
-- The Kinks
-- Ben E. King
-- Rhapsody of fire
-- Kool & The Gang
-- Diana Ross
-- Joan Jett
-- Blondie
-- Silly Boy Blue
-- Terrenoire
-- Iron Maiden
-- SLipknot
-- The Raconteurs
-- Lynyrd Skynyrd
-- Hozier
-- L'impératrice
-- Juliette Armanet
-- Celeste
-- Milky Chance
-- Dafuniks
-- Gorillaz
-- Jungle
-- Gaël Faye
-- Calogero
-- Chinese Man
-- Concorde
-- The Kills
-- Maribou State
-- Fugees
-- Balthazar
-- Pharell Williams
-- The Unlikely Candidates
-- Raphaël
-- Yseult
-- Tom Odell
-- Lord Huron
-- Noé Preszow
-- Suzane
-- Lous And The Yakuza
-- Pomme
-- Woodkid
-- Chagrin d'Amour
-- Bon Entendeur
-- Ben Mazué
-- Nick Waterhouse
-- Eminem
-- Petit Biscuit
-- Eddy de Pretto
-- Asaf Avidan
-- Sam Smith
-- M
-- David Gilmour
-- MC Solaar
-- Odezenne
-- Diam's
-- Orelsan
-- Abd al Malik
-- Stromae
-- Lucio Bukowski
-- STUPEFLIP
-- Hugo TSR
-- Disiz
-- JoeyStarr
-- IAM
-- Marc Lavoine
-- Daniel Balavoine
-- Gringe
-- Dooz Kawa
-- Anton Serra
-- Brigitte
-- C2C
+- Simon & Garfunkel - the sound of silence
+- Rod Stewart - baby jane
+- The Do - on my shoulders
+- Van Halen - jump
+- The Alan Parsons Project - i wouldn't to be like you
+- James Brown - it's a man's, man's, man's world
+- Bronski Beat - smalltown boy
+- Iggy Pop - the passenger
+- Mike Oldfield - moonlight shadows
+- LP - lost on you
+- The Roots - the seed
+- A-HA - take on me
+- Chuck Berry - johnny be goode
+- Shaka Ponk - my name is stain
+- Santana - europa
+- The Monkees - i'm a believer
+- The Beach Boys - i get around
+- Patti Smith - because the night
+- Charlie Winston - like a hobo
+- Amy Winehouse - back to black
+- Madness - one step beyond
+- Bonnie Tyler - total eclipse of the heart
+- Barclay James Harvest - child of the universe
+- The Who - behind blue eyes
+- Joy Division - love will tear us apart
+- Stevie Wonder - part-time lover
+- Black Sabath - paranoid
+- Ramones - blitzkrieg bop
+- The White Stripes - seven nation army
+- Survivor - eye of the tiger
+- The Kinks - you really got me
+- Ben E. King - stand by me
+- Kool & The Gang - celebration
+- Diana Ross - upside down
+- Joan Jett - i love rock 'n roll
+- Joan Baez - Here's to you
+- Blondie - call me
+- Silly Boy Blue - the fight
+- Terrenoire - jusqu'à mon dernier souffle
+- Iron Maiden - the trooper
+- Slipknot - snuff
+- The Raconteurs - steady, as she goes
+- Lynyrd Skynyrd - sweet home alabama
+- Hozier - take me to church
+- L'impératrice - vacances
+- Daft Punk - voyager
+- Juliette Armanet - le dernier jour du disco
+- Celeste - stop this flame
+- Milky Chance - save your tears
+- Dafuniks - all i want
+- Jungle - keep moving
+- Gaël Faye - kerozen
+- Calogero - celui d'en bas
+- Chinese Man - i've got that tune
+- Concorde - sons
+- The Kills - doing it to death
+- Maribou State - steal
+- Fugees - no woman, no cry
+- Balthazar - losers
+- Pharell Williams - freedom
+- The Unlikely Candidates - bells
+- Raphaël - caravane
+- Yseult - corps
+- Tom Odell - another love
+- Lord Huron - the night we met
+- Noé Preszow - que tout s'danse
+- Suzane - l'appart vide
+- Lous And The Yakuza - dilemme
+- Pomme - vide
+- Chagrin d'Amour - chacun fait (c'qui lu plait)
+- Bon Entendeur - le temps est bon
+- Ben Mazué - tu m'auras tellement plu
+- Nick Waterhouse - i feel an urge coming on
+- Eminem - the real slim shady
+- Petit Biscuit - sunset lover
+- Eddy de Pretto - normal
+- Asaf Avidan - one day
+- Sam Smith - money on my mind
+- M - manitoumani 
+- David Gilmour - rattle that lock
+- MC Solaar - obsolète
+- Odezenne - une danse de mauvais goût 
+- Diam's - la boulette
+- Orelsan - changement
+- Abd al Malik - le marseillais
+- Lucio Bukowski - P'tit con
+- STUPEFLIP - stupeflip vite !!!
+- Hugo TSR - rei
+- Disiz - qu'ils ont de la chance
+- JoeyStarr - mamy ...
+- IAM -petit frère
+- Gringe - scanner
+- Dooz Kawa - sous la pluie
+- Anton Serra - aimer tue
+- Brigitte - hier encore
+- C2C - down the road
