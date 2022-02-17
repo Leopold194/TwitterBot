@@ -31,7 +31,7 @@ while connect:
     actually_time = datetime.now()
     print(actually_time)
 
-    if actually_time.hour == 10 and (actually_time.minute == 0 or actually_time.minute == 1):
+    if actually_time.hour == 6 and (actually_time.minute == 0 or actually_time.minute == 1):
 
         try:
 
