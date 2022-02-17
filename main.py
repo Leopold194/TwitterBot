@@ -7,6 +7,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 from deezpy.playlist import Playlist
 from deezpy.song import Track
+from utils.track_of_day import get_trackOfDay
 import utils.dowload as dl
 import utils.video_generator as vg
 
@@ -29,24 +30,9 @@ except:
 run = True
 while run == True:
 
-    playlist = Playlist(9949516322)
-    list_tracks = []
-    list_tracks_passed = []
-    for tracks in playlist.tracks["data"]:
-        list_tracks.append(tracks["id"])
-
-    tracks_for_today = random.choice(list_tracks)
-    while tracks_for_today in list_tracks_passed:
-        tracks_for_today = random.choice(list_tracks)
-    list_tracks_passed.append(tracks_for_today)
-    print(tracks_for_today)
-
-    musicOfDay = Track(tracks_for_today)
-
-    link_video = musicOfDay.link
-    link_cover = musicOfDay.album["cover_big"]
-
-    audio = dl.download_audio(link_video)
+    musicOfDay = get_trackOfDay()
+    link_video = musicOfDay[0].link
+    link_cover = musicOfDay[0].album["cover_big"]
 
     sock = urllib.request.urlopen(link_video)
     htmlPage = sock.read()
@@ -93,10 +79,10 @@ while run == True:
     time.sleep(5)
 
     media = api.media_upload('uploads/video.mp4')
-    title = musicOfDay.title_short
-    artist = musicOfDay.artist["name"]
-    album = musicOfDay.album["title"]
-    day = len(list_tracks_passed)
+    title = musicOfDay[0].title_short
+    artist = musicOfDay[0].artist["name"]
+    album = musicOfDay[0].album["title"]
+    day = musicOfDay[1]
     tweet = f"Day {day}\n\nTitle : {title}\nArtiste : {artist}\nAlbum : {album}"
     post = api.update_status(status=tweet, media_ids=[media.media_id])
     os.remove('uploads/video.mp4'); os.remove('uploads/video.avi'); os.remove('uploads/coverOfDay.jpg'); os.remove('uploads/songOfDay.mp3'); os.remove('uploads/songOfDay_short.mp3')
