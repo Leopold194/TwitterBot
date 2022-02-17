@@ -15,10 +15,14 @@ consumer_secret = "tbXHOsf1DFyhxzr2YePJzIz3BXWkIJ2GHk0Zx8YsRnNkfnyhGq"
 access_token = "1494014284761907203-fDqNtiqF7sJ8S5Xy5hdcnxSXcMVUl0"
 access_token_secret = "nhcarTONHrDHEWvgbyw1G7uhSq2feubhICba4M3eDrRBT"
 
+"""Used to connect to the Twitter client
+"""
 auth = tw.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tw.API(auth)
 
+"""Check if the keys are correct.
+"""
 try:
     api.verify_credentials()
     print("Bot is online")
@@ -28,13 +32,17 @@ except:
 
 while connect:
 
+    """Check if it's time to post the tweet, especially here 6am
+    """
     actually_time = datetime.now()
-    print(actually_time)
-
     if actually_time.hour == 6 and (actually_time.minute == 0 or actually_time.minute == 1):
 
         try:
 
+            """Start by recovering the sound of the day, then isolate the link and the cover of this music
+            Then create mp4 video which will contain audio and cover.
+            Finally, post the tweet, and delete the files that are no longer needed.
+            """
             musicOfDay = get_trackOfDay()
             link_video = musicOfDay[0].link
             link_cover = musicOfDay[0].album["cover_xl"]

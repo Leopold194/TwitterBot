@@ -6,10 +6,16 @@ from bs4 import BeautifulSoup
 import utils.dowload as dl
 
 def convert_mp3_to_shortmp3():
-        os.system("ffmpeg -i uploads/songOfDay.mp3 -ss 0 -t 29 uploads/songOfDay_short.mp3")
+    
+    """Reduced the time of the audio to 29 seconds so that it is possible to post it on Twitter.
+    """
+    os.system("ffmpeg -i uploads/songOfDay.mp3 -ss 0 -t 29 uploads/songOfDay_short.mp3")
 
 def get_audio(link_video):
     
+    """Start by getting the audio link from the music link query.
+    Minimize it using the function above, then download the audio.
+    """
     sock = urllib.request.urlopen(link_video)
     htmlPage = sock.read()
     sock.close()
@@ -26,4 +32,6 @@ def get_audio(link_video):
     
 def get_image(link_image):
     
-    return dl.download_image(link_image)
+    """Dowload the cover
+    """
+    dl.download_image(link_image)

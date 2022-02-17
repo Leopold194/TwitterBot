@@ -6,6 +6,13 @@ from deezpy.song import Track
 
 def get_trackOfDay():
 
+    """Checks which titles have already been played, and retrieves a title that has never been played in the playlist.
+    Then attribute to musicOfDay the Track object which contains all the information of the selected music
+    
+    Returns:
+        musicOfDay (Track): A Track object
+        len(file) (int): The number of titles already passed.    
+    """
     with open('utils/data/musics_passed.json', "r") as file :
         file = json.load(file)
 
