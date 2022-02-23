@@ -2,6 +2,7 @@ import tweepy as tw
 import os
 import time
 
+from keep_alive import keep_alive
 from datetime import datetime
 
 from utils.upload_tweet import upload
@@ -9,11 +10,11 @@ from utils.get_functional_video import create_functional_video
 from utils.track_of_day import get_trackOfDay
 from utils.get_audio_image import get_audio, get_image
 
-consumer_key = "Write here your consumer key"
-consumer_secret = "Write here your consumer secret key"
+consumer_key = "Y0w1V5Fx08E9YVwb8yeEQZkTJ"
+consumer_secret = "tbXHOsf1DFyhxzr2YePJzIz3BXWkIJ2GHk0Zx8YsRnNkfnyhGq"
 
-access_token = "Write here your access token"
-access_token_secret = "Write here your access token secret"
+access_token = "1494014284761907203-fDqNtiqF7sJ8S5Xy5hdcnxSXcMVUl0"
+access_token_secret = "nhcarTONHrDHEWvgbyw1G7uhSq2feubhICba4M3eDrRBT"
 
 """Used to connect to the Twitter client
 """
@@ -30,6 +31,8 @@ try:
 except:
     print("Bot has a problem")
 
+
+keep_alive()
 while connect:
 
     """Check if it's time to post the tweet, especially here 6am
