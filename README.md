@@ -5,3 +5,4 @@ Don't forget to pip this packages :
 - bs4
 - html5lib
 - lxml
+- Flask
