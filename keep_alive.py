@@ -9,7 +9,7 @@ cli.show_server_banner = lambda *x: None
 
 @app.route('/')
 def main():
-    return "Currently, PokéTweet bot is connected to twitter"
+    return "Currently, BotDylan bot is connected to twitter"
 
 
 def run():
