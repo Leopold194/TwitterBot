@@ -9,7 +9,7 @@ def convert_mp3_to_shortmp3():
     
     """Reduced the time of the audio to 29 seconds so that it is possible to post it on Twitter.
     """
-    os.system("ffmpeg -i uploads/songOfDay.mp3 -ss 0 -t 29 uploads/songOfDay_short.mp3")
+    os.popen("ffmpeg -i uploads/songOfDay.mp3 -ss 0 -t 29 uploads/short_audio.mp3")
 
 def get_audio(link_video):
     

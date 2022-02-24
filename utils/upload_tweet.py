@@ -1,5 +1,6 @@
 import json
 import random
+import time
 
 def upload(api, musicOfDay):
     """Start by uploading the mp4 video, then add the description containing the day, title, artist, album, link, and date. 
@@ -9,7 +10,9 @@ def upload(api, musicOfDay):
         api : client Twitter
         musicOfDay (dict): all informations about music of day
     """
-    media = api.media_upload('uploads/video.mp4')
+    time.sleep(60)
+	
+    media = api.media_upload(filename='uploads/video.mp4')
         
     title = musicOfDay[0].title_short
     artist = musicOfDay[0].artist["name"]
@@ -22,6 +25,8 @@ def upload(api, musicOfDay):
         file = json.load(file)
 
     sentence = random.choice(file)
-
+	
     tweet = f"Day {day}\n\n🎵 Title : {title}\n👨‍🎤 Artist : {artist}\n🎸 Album : {album}\n🔗 Link : {link}\n📆 Date : {date}\n\n🤟 {sentence}\n#music #deezer"
-    api.update_status(status=tweet, media_ids=[media.media_id])
+
+    post = api.update_status(status=tweet, media_ids=[media.media_id])
+    return 1
