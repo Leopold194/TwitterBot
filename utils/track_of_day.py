@@ -14,24 +14,24 @@ def get_trackOfDay():
         len(file) (int): The number of titles already passed.    
     """
     with open('utils/data/musics_passed.json', "r") as file :
-        file = json.load(file)
+            file = json.load(file)
 
     playlist = Playlist(9949516322)
     list_tracks = []
     
     for tracks in playlist.tracks["data"]:
-        list_tracks.append(tracks["id"])
+            list_tracks.append(tracks["id"])
 
     tracks_for_today = random.choice(list_tracks)
     
     while tracks_for_today in file:
-        tracks_for_today = random.choice(list_tracks)
+            tracks_for_today = random.choice(list_tracks)
     
     file.append(tracks_for_today)
     
     musicOfDay = Track(tracks_for_today)
 
     with open('utils/data/musics_passed.json', "w") as writer : 
-        json.dump(file, writer)
+            json.dump(file, writer)
 
-    return musicOfDay, len(file)
+    return (musicOfDay, len(file))

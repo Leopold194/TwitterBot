@@ -1,6 +1,6 @@
 import os
 
-def make_video(image_link = 'uploads/coverOfDay.jpg', audio_link = 'uploads/songOfDay_short.mp3') :
+def make_video(image_link = 'uploads/coverOfDay.jpg', audio_link = 'uploads/short_audio.mp3') :
     """Create a video with an image and a music in background with ffmpeg
 
     Args:
