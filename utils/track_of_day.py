@@ -4,7 +4,7 @@ import json
 from deezpy.playlist import Playlist
 from deezpy.song import Track
 
-def get_trackOfDay():
+def get_trackOfDay(exception = False):
 
     """Checks which titles have already been played, and retrieves a title that has never been played in the playlist.
     Then attribute to musicOfDay the Track object which contains all the information of the selected music
