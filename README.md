@@ -7,4 +7,4 @@ Don't forget to pip this packages :
 - lxml
 - Flask
 
-#time.sleep() can be removed depending on the host.
+# time.sleep() can be removed depending on the host.
