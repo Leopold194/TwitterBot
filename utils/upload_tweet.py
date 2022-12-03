@@ -1,10 +1,7 @@
 import json
 import random
 import time
-<<<<<<< HEAD
 import os
-=======
->>>>>>> origin/main
 
 def upload(api, musicOfDay, exception = False):
     """Start by uploading the mp4 video, then add the description containing the day, title, artist, album, link, and date. 
@@ -29,7 +26,7 @@ def upload(api, musicOfDay, exception = False):
     link = musicOfDay[0].link
     date = musicOfDay[0].release_date
     day = musicOfDay[1]
-<<<<<<< HEAD
+
     hashtag_artist = artist.replace(" ", "").replace("-", "").replace(",", "").replace(".", "")
     hashtag_title = title.replace(" ", "").replace("-", "").replace(",", "").replace(".", "")
     
@@ -41,11 +38,5 @@ def upload(api, musicOfDay, exception = False):
     while os.listdir('uploads') != []:
     	for filename in os.listdir('uploads'):
             os.remove('uploads/' + filename)
-
-=======
-
-    tweet = f"Day {day}\n\n🎵 Title : {title}\n👨‍🎤 Artist : {artist}\n🎸 Album : {album}\n🔗 Link : {link}\n📆 Date : {date}\n\n🤟 {sentence}\n#music #deezer"
-   
-    post = api.update_status(status=tweet, media_ids=[media.media_id])
->>>>>>> origin/main
+	
     return 1
